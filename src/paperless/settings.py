@@ -332,7 +332,8 @@ INSTALLED_APPS = [
     "drf_spectacular_sidecar",
     *env_apps,
 ]
-
+print(DEBUG)
+DEBUG=True
 if DEBUG:
     INSTALLED_APPS.append("channels")
 
