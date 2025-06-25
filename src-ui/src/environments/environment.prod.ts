@@ -4,7 +4,7 @@ export const environment = {
   production: true,
   apiBaseUrl: document.baseURI + 'api/',
   apiVersion: '9', // match src/paperless/settings.py
-  appTitle: 'Paperless-ngx',
+  appTitle: 'Praszo',
   tag: 'prod',
   version: '2.17.1',
   webSocketHost: window.location.host,

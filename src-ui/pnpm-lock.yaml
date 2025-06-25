@@ -74,6 +74,9 @@ importers:
       ngx-ui-tour-ng-bootstrap:
         specifier: ^16.0.0
         version: 16.0.0(b22d6d97efbc9cb8f9e09ff61a244f2e)
+      pnpm:
+        specifier: ^10.12.2
+        version: 10.12.2
       rxjs:
         specifier: ^7.8.2
         version: 7.8.2
@@ -4932,6 +4935,11 @@ packages:
   playwright@1.51.1:
     resolution: {integrity: sha512-kkx+MB2KQRkyxjYPc3a0wLZZoDczmppyGJIvQ43l+aZihkaVvmu/21kiyaHeHjiFxjxNNFnUncKmcGIyOojsaw==}
     engines: {node: '>=18'}
+    hasBin: true
+
+  pnpm@10.12.2:
+    resolution: {integrity: sha512-oyVAGFuWTuMLtOl55AWtxq9ZImtDjuTMGfnodzZnpm0wL1v+5go508rGnjXkuW5winHdACt+k1nEESoXIqwyPw==}
+    engines: {node: '>=18.12'}
     hasBin: true
 
   postcss-loader@8.1.1:
@@ -11438,6 +11446,8 @@ snapshots:
       playwright-core: 1.51.1
     optionalDependencies:
       fsevents: 2.3.2
+
+  pnpm@10.12.2: {}
 
   postcss-loader@8.1.1(postcss@8.5.2)(typescript@5.5.4)(webpack@5.98.0):
     dependencies:

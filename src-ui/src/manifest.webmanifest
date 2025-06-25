@@ -4,15 +4,15 @@
   "display": "standalone",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "Praszo_logo.png",
       "sizes": "256x256"
     },
     {
-      "src": "assets/logo-notext.svg",
+      "src": "Praszo_logo.png",
       "sizes": "any"
     }
   ],
-  "name": "Paperless-ngx",
-  "short_name": "Paperless-ngx",
+  "name": "Praszo",
+  "short_name": "Praszo",
   "start_url": "/"
 }
