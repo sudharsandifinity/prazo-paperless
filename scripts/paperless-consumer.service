@@ -3,10 +3,10 @@ Description=Paperless consumer
 Requires=redis.service
 
 [Service]
-User=paperless
-Group=paperless
-WorkingDirectory=/opt/paperless/src
-ExecStart=python3 manage.py document_consumer
+User=hlbadmin
+#Group=hlbadmin
+WorkingDirectory=/opt/prazo-paperless/src
+ExecStart=/opt/prazo-paperless/.venv/bin/python manage.py document_consumer
 
 [Install]
 WantedBy=multi-user.target

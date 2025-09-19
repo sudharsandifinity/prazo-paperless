@@ -6,9 +6,9 @@ Requires=redis.service
 #Requires=paperless-webserver.socket
 
 [Service]
-User=paperless
-Group=paperless
-WorkingDirectory=/opt/paperless/src
+User=hlbadmin
+#Group=hlbadmin
+WorkingDirectory=/opt/prazo-paperless/src
 
 Environment=GRANIAN_HOST=::
 Environment=GRANIAN_PORT=8000
@@ -23,7 +23,7 @@ ExecStart=/bin/sh -c '\
   [ -n "$PAPERLESS_WEBSERVER_WORKERS" ] && export GRANIAN_WORKERS=$PAPERLESS_WEBSERVER_WORKERS; \
   # URL path prefix: only set if PAPERLESS_FORCE_SCRIPT_NAME exists \
   [ -n "$PAPERLESS_FORCE_SCRIPT_NAME" ] && export GRANIAN_URL_PATH_PREFIX=$PAPERLESS_FORCE_SCRIPT_NAME; \
-  exec granian --interface asginl --ws "paperless.asgi:application"'
+  exec /opt/prazo-paperless/.venv/bin/granian --interface asginl --ws "paperless.asgi:application"'
 
 [Install]
 WantedBy=multi-user.target

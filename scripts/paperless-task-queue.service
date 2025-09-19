@@ -3,10 +3,10 @@ Description=Paperless Celery Workers
 Requires=redis.service
 
 [Service]
-User=paperless
-Group=paperless
-WorkingDirectory=/opt/paperless/src
-ExecStart=celery --app paperless worker --loglevel INFO
+User=hlbadmin
+#Group=hlbadmin
+WorkingDirectory=/opt/prazo-paperless/src
+ExecStart=/opt/prazo-paperless/.venv/bin/celery --app paperless worker --loglevel INFO
 
 [Install]
 WantedBy=multi-user.target
