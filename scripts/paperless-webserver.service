@@ -3,7 +3,7 @@ Description=Paperless webserver
 After=network.target
 Wants=network.target
 Requires=redis.service
-#Requires=paperless-webserver.socket
+Requires=paperless-webserver.socket
 
 [Service]
 User=hlbadmin
